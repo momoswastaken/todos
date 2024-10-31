@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React, { useState } from "react";
 
@@ -39,12 +39,12 @@ const Todo: React.FC = () => {
 
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-black">
-      <div className="w-2/4 bg-black p-6 rounded-lg shadow-lg text-center">
-        <h1 className="text-center font-extrabold text-4xl text-white mb-6">To Do List</h1>
-        <div className="flex gap-2 mb-6">
+      <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl bg-black p-6 rounded-lg shadow-lg text-center">
+        <h1 className="text-center font-extrabold text-2xl sm:text-4xl text-white mb-6">To Do List</h1>
+        <div className="flex flex-col sm:flex-row gap-2 mb-6">
           <input
             type="text"
-            className="flex-1 p-2 rounded border border-gray-300"
+            className="flex-1 p-2 rounded text-white bg-black border border-gray-300"
             placeholder="Add a new task"
             value={newTodoTitle}
             onChange={(e) => setNewTodoTitle(e.target.value)}
